@@ -1,4 +1,4 @@
-import getBuffer from './index';
+import getBuffer from './buffer';
 import ArrayBufferConverter from './arrayBufferConverter';
 
 test(('arrayBufferConverter toString'), () => {
@@ -6,4 +6,5 @@ test(('arrayBufferConverter toString'), () => {
   const arrayBufferConverter = new ArrayBufferConverter();
   arrayBufferConverter.load(getBuffer());
   expect(arrayBufferConverter.toString()).toBe(expected);
+  expect(`${arrayBufferConverter}`).toBe(expected);
 });
