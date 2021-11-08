@@ -1,5 +1,5 @@
-import getBuffer from './buffer';
-import ArrayBufferConverter from './arrayBufferConverter';
+import getBuffer from '../buffer';
+import ArrayBufferConverter from '../arrayBufferConverter';
 
 test(('arrayBufferConverter toString'), () => {
   const expected = '{"data":{"user":{"id":1,"name":"Hitman","level":10}}}';
